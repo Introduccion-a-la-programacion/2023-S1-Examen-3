@@ -1,15 +1,14 @@
-# 2022 Semestre 1
-# Segundo Examen [Video](https://web.microsoftstream.com/video/2e33e280-916d-484a-8e2d-b307b5a7ca26)
+# 2023 Semestre 1
 
 ## Instrucciones Generales
-- El archivo **debe** llamarse **Examen2.py**
+- El archivo **debe** llamarse **Examen3.py**
 - **Debe** respetar el nombre de las funciones y el nombre de los parámetros que más adelante se describen
 - Deben contruir las funciones con **Python**
-- Debe utilizar la programación solo por **iteración** en **todos** sus métodos, es decir el uso de **While o For**
+- Debe utilizar la programación solo por **recursión** 
 - Debe crear los comentarios de cada función tomando en cuenta **Nombre**, **Entrada**, **Salida** y **Restricciones**
-- Recordar que en este caso por evaluar vectores o matrices no se debe recortar, solo el recorrido es por sus índices
+- Recordar que en este caso por evaluar vectores o matrices **no se debe recortar**, solo el recorrido es por sus índices
 - Pueden hacer uso **Try/Except, isinstance, type**
-- Pueden hacer el uso de las funciones como **largoLista, validarVector, esMatrizCuadrada**
+- Pueden hacer el uso de las funciones que se va creando durante el examen
 - En todos los problemas aquí expuestos debe de validarse:
 	-  de que los vectores acepten solo números enteros
 	-  la matriz no debe ser nula
@@ -19,7 +18,7 @@
 
 ## esVectorOrdenado(vector, forma)
 
-Escriba un programa con sintaxis Python cuya función principal se llame **esVectorOrdenado(vector, forma)**, que reciba como entradas un **vector** y una **forma**, este último será un string que especificará si el vector está ordenado en forma **ascendente o descendente**. Esta función retornará **True** si el vector corresponde al tipo o **False** del caso contrario
+Escriba un programa con sintaxis Python cuya función principal se llame **esVectorOrdenado(vector, forma)**, que reciba como entradas un **vector** y una **forma**, este último será un string que especificará si el vector está ordenado en forma **ascendente o descendente**. Esta función retornará **True** si el vector corresponde al tipo de ordenamiento o **False** del caso contrario. 
 
 Los valores para **forma** son:  'asc' o 'desc'
 
@@ -32,21 +31,21 @@ True
 False
 ```
 
-## separarDigitos(lista)
+## digitoMayoryMenor(lista)
 
-Escriba un programa con sintaxis Python cuya función principal se llame **separarDigitos(lista)**, que reciba como entrada una **lista** con número **enteros positivos** desde 1000 hasta 9999 inclusive, y que retorne una matriz donde cada fila de estará compuesto por los dígitos por separado de cada número de la lista del parámetro de entrada.
+Escriba un programa con sintaxis Python cuya función principal se llame **digitoMayoryMenor(lista)**, que reciba como entrada una **lista** con número **enteros**, y que retorne una lista de nuevos números que estará compuesto por los dígitos mayor y menor del número analizado.
 
 ```python
->>> separarDigitos([2300, 6756])
-[[2,3,0,0], [6,7,5,6]]
->>> separarDigitos([1520, 4500, 6000])
-[[1,5,2,0], [4,5,0,0], [6,0,0,0]]
+>>> digitoMayoryMenor([2300, 6756])
+[30, 76]
+>>> digitoMayoryMenor([2300, 6756, 99, 1001, 91823])
+[30, 76, 99, 10, 91]
 
 ```
 
 ## comprimirMatriz(matriz)
 	
-Escriba una solución con sintaxis Python cuya función principal se llame **comprimirMatriz(matriz)**, recibe como parámetro de entrada una matriz con un número de **filas par**,  no hay restricción con el número de columnas. Lo que se debe realizar es retornar una matriz donde sus vectores o filas son el resultado de la suma de cada dos filas de la matriz inicial, es decir:
+Escriba una solución con sintaxis Python cuya función principal se llame **comprimirMatriz(matriz)**, recibe como parámetro de entrada una matriz válida y lo que se debe realizar es retornar una matriz donde sus vectores o filas son el resultado de la suma de su vector adyacente, en el caso de que la matriz tenga filas impar, la última no será sumada:
 
 matriz = [[2, 15], [8, 12], [5, 6], [30, 50]]
 
