@@ -29,10 +29,11 @@ True
 False
 >>> numeroHermano(-8)
 "Error en la entrada, debe ser número positivo"
+```
 
 ## esVectorOrdenado(vector, forma)
 
-Escriba un programa con sintaxis Python cuya función principal se llame **esVectorOrdenado(vector, forma)**, que reciba como entradas un **vector** y una **forma**, este último será un string que especificará si el vector está ordenado en forma **ascendente o descendente**. Esta función retornará **True** si el vector corresponde al tipo de ordenamiento o **False** del caso contrario. 
+Escriba un programa con sintaxis Python cuya función principal se llame **esVectorOrdenado(vector, forma)**, que reciba como entradas un **vector** y una **forma**, este último será un string que especificará si el vector está ordenado en forma **ascendente o descendente**. Esta función retornará **True** si el vector corresponde al tipo de ordenamiento o **False** del caso contrario. No se puede usar su representación inversa o reversa del número
 
 Los valores para **forma** son:  'asc' o 'desc'
 
