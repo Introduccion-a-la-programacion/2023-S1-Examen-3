@@ -38,14 +38,14 @@ Escriba un programa con sintaxis Python cuya función principal se llame **digit
 ```python
 >>> digitoMayoryMenor([2300, 6756])
 [30, 76]
->>> digitoMayoryMenor([2300, 6756, 99, 1001, 91823])
-[30, 76, 99, 10, 91]
+>>> digitoMayoryMenor([2300, 6756, -99, 1001, 91823])
+[30, 76, -99, 10, 91]
 
 ```
 
 ## comprimirMatriz(matriz)
 	
-Escriba una solución con sintaxis Python cuya función principal se llame **comprimirMatriz(matriz)**, recibe como parámetro de entrada una matriz válida y lo que se debe realizar es retornar una matriz donde sus vectores o filas son el resultado de la suma de su vector adyacente, en el caso de que la matriz tenga filas impar, la última no será sumada:
+Escriba una solución con sintaxis Python cuya función principal se llame **comprimirMatriz(matriz)**, recibe como parámetro de entrada una matriz **válida** y lo que se debe realizar es retornar una matriz donde sus vectores o filas son el resultado de la suma de su vector adyacente, en el caso de que la matriz tenga filas impar, la última no será sumada:
 
 matriz = [[2, 15], [8, 12], [5, 6], [30, 50]]
 
