@@ -13,10 +13,10 @@ def test_esVectorOrdenado_3():
 #################################################################
 
 def test_digitoMayoryMenor_1():
-    assert Examen3.digitoMayoryMenor([2300, 6756]) == [30, 76]
+    assert Examen3.digitoMayoryMenor([2300, 6756]) == [30, 75]
     
 def test_digitoMayoryMenor_2():
-    assert Examen3.digitoMayoryMenor([2300, 6756, -99, 1001, 91823]) == [30, 76, -99, 10, 91]
+    assert Examen3.digitoMayoryMenor([2300, 6756, -99, 1001, 91823]) == [30, 75, -99, 10, 91]
     
 #################################################################
 
