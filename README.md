@@ -14,6 +14,11 @@
 	-  la matriz no debe ser nula
 	-  deben ser homogéneas y del mismo largo
 	-  los mensajes de error deben ser claros
+- Cada pregunta vale 10 puntos:
+ 	- 1 punto comentarios
+ 	- 2 puntos validaciones
+ 	- 7 puntos resolución del problema
+ - Usar el **IDLE de Python**, no usar **VSCode**
 
 
 ## numeroHermano(num)
@@ -52,9 +57,9 @@ Escriba un programa con sintaxis Python cuya función principal se llame **digit
 
 ```python
 >>> digitoMayoryMenor([2300, 6756])
-[30, 76]
+[30, 75]
 >>> digitoMayoryMenor([2300, 6756, -99, 1001, 91823])
-[30, 76, -99, 10, 91]
+[30, 75, -99, 10, 91]
 
 ```
 
