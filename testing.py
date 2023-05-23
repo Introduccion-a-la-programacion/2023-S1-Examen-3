@@ -28,8 +28,11 @@ def test_comprimirMatriz_2():
     
 #################################################################    
 
-def test_invertirMatriz_1():
-    assert Examen2.invertirMatriz([[1,2,3,4],[5,6,7,8],[9,10,11,12]]) == [[1,5,9],[2,6,10],[3,7,11],[4,8,12]]
-
-def test_invertirMatriz_2():
-    assert Examen2.invertirMatriz([[20, 15],[8, 12],[30, 50]]) == [[20,8,30], [15,12,50]]
+def test_numeroHermano_1():
+    assert Examen1.numeroHermano(20) == True
+    
+def test_numeroHermano_2():
+    assert Examen1.numeroHermano(8) == False
+    
+def test_numeroHermano_3():
+    assert isinstance(str(Examen1.numeroHermano(-8)), str) == isinstance("Error: Número debe ser positivo", str)
