@@ -16,6 +16,20 @@
 	-  los mensajes de error deben ser claros
 
 
+## numeroHermano(num)
+
+Escriba un programa con sintaxis Python cuya función principal se llame **numeroHermano(num)**, que reciba como entrada un **número entero positivo** denominado num y que retorne si cumple (True) o no los requisitos (False) de número hermano. Un número hermano es un número natural y que posee al menos dos divisores primos (el 1 no es primo):
+
+Ejemplos del comportamiento de la función:
+
+```python
+>>>numeroHermano(20) #(divisores propios: 2, 4, 5, 10)
+True
+>>> numeroHermano(8) #(divisores propios: 2,4)
+False
+>>> numeroHermano(-8)
+"Error en la entrada, debe ser número positivo"
+
 ## esVectorOrdenado(vector, forma)
 
 Escriba un programa con sintaxis Python cuya función principal se llame **esVectorOrdenado(vector, forma)**, que reciba como entradas un **vector** y una **forma**, este último será un string que especificará si el vector está ordenado en forma **ascendente o descendente**. Esta función retornará **True** si el vector corresponde al tipo de ordenamiento o **False** del caso contrario. 
@@ -61,22 +75,4 @@ resultado = [[28, 27], [35, 56]]
 >>> comprimirMatriz([[2, 15, 2], [8, 12, 10], [5, 6, 0], [30, 50, 15], [5, 8, 6], [10, 12, 100]])
 [[10, 27, 12], [35, 56, 15], [15, 20, 106]]
 
-```
-
-## invertirMatriz(lista) 
-Escriba una solución con sintaxis Python cuya función principal se llame **invertirMatriz(matriz)**, recibe como parámetro de entrada una matriz y debe devolver esa misma matriz pero invirtiendo los valores de columnas a filas
-
-Ejemplo:
-
-![image](https://user-images.githubusercontent.com/1167750/167147445-89c6111d-0bba-4488-86f3-bc029d4f966e.png)
-
-![image](https://user-images.githubusercontent.com/1167750/167148137-011325a3-b7e9-4037-864b-2df25a282989.png)
-
-
-```python
->>>invertirMatriz([[1,2,3,4],[5,6,7,8],[9,10,11,12]])
-[[1,5,9],[2,6,10],[3,7,11],[4,8,12]]
-
->>>invertirMatriz([[20, 15],[8, 12],[30, 50]])
-[[20,8,30], [15,12,50]]
 ```
